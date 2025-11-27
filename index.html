@@ -9,17 +9,27 @@
 		<h1>個人情報入力フォーム</h1>
 		<form action="#" method="post">
 			<div>
-				<label for="sei">姓：</label>
+				<label for="sei">姓：("family-name")</label>
 				<input
 					type="text"
 					id="sei"
 					name="family-name"
 					required
-					autocomplete="family_name"
+					autocomplete="family-name"
 				/>
 			</div>
 			<div>
-				<label for="mei">名：</label>
+				<label for="sei2">姓2:("family-name")</label>
+				<input
+					type="text"
+					id="sei2"
+					name="family_name"
+					required
+					autocomplete="family-name"
+				/>
+			</div>
+			<div>
+				<label for="mei">名：("given-name")</label>
 				<input
 					type="text"
 					id="mei"
@@ -29,7 +39,7 @@
 				/>
 			</div>
 			<div>
-				<label for="email">メールアドレス：</label>
+				<label for="email">メールアドレス：("email")</label>
 				<input
 					type="email"
 					id="email"
@@ -39,11 +49,11 @@
 				/>
 			</div>
 			<div>
-				<label for="tel">電話番号：</label>
+				<label for="tel">電話番号：("tel")</label>
 				<input type="tel" id="tel" name="tel" autocomplete="tel" />
 			</div>
 			<div>
-				<label for="postal-code">郵便番号：</label>
+				<label for="postal-code">郵便番号：("postal-code")</label>
 				<input
 					type="text"
 					id="postal-code"
@@ -54,12 +64,39 @@
 				<button type="button">住所検索</button>
 			</div>
 			<div>
-				<label for="address">住所：</label>
+				<label for="address">住所1("street-address")：</label>
 				<input
 					type="text"
 					id="address"
 					name="street-address"
 					autocomplete="street-address"
+				/>
+			</div>
+			<div>
+				<label for="address">住所2("address-line1")：</label>
+				<input
+					type="text"
+					id="address"
+					name="address-line1"
+					autocomplete="address-line1"
+				/>
+			</div>
+			<div>
+				<label for="address">住所3("address-line2")：</label>
+				<input
+					type="text"
+					id="address"
+					name="address-line2"
+					autocomplete="address-line2"
+				/>
+			</div>
+			<div>
+				<label for="address">住所3("address-line3")：</label>
+				<input
+					type="text"
+					id="address"
+					name="address-line3"
+					autocomplete="address-line3"
 				/>
 			</div>
 			<br />
